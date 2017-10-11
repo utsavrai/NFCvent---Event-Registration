@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FA8DA"
+    android:orientation="vertical"
+    tools:context="com.example.utsav.mysqldemo.NfcActivity">
+
+    <TextView
+        android:id="@+id/EventTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Event Tag"
+        android:textSize="30sp"
+        android:paddingBottom="8sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/reginfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/EventTag"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:text="Registration No:"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/finfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reginfo"
+        android:layout_alignStart="@+id/reginfo"
+        android:layout_below="@+id/reginfo"
+        android:text="First Name:"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/binfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linfo"
+        android:layout_alignStart="@+id/linfo"
+        android:layout_below="@+id/linfo"
+        android:text="Branch:"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/seminfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/binfo"
+        android:layout_alignStart="@+id/binfo"
+        android:layout_below="@+id/binfo"
+        android:text="Semester:"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/linfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/finfo"
+        android:layout_alignStart="@+id/finfo"
+        android:layout_below="@+id/finfo"
+        android:text="Last Name:"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regno"
+        android:layout_alignStart="@+id/regno"
+        android:layout_alignTop="@+id/finfo"
+        android:text="TextView"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fname"
+        android:layout_alignStart="@+id/fname"
+        android:layout_alignTop="@+id/linfo"
+        android:text="TextView"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/branch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sem"
+        android:layout_alignStart="@+id/sem"
+        android:layout_alignTop="@+id/binfo"
+        android:text="TextView"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/sem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lname"
+        android:layout_alignStart="@+id/lname"
+        android:layout_alignTop="@+id/seminfo"
+        android:text="TextView"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/regno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/EventTag"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:text="TextView"
+        android:textSize="24sp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/Events"
+        android:layout_toEndOf="@+id/Events"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:id="@+id/Events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Participated events"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/seminfo"
+        android:layout_centerHorizontal="true" />
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Events"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/addbtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

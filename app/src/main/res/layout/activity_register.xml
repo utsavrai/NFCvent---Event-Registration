@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E57373">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.utsav.mysqldemo.Register">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/e_regno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Registration No"
+            android:inputType="textPersonName"
+            android:padding="16sp" />
+
+        <EditText
+            android:id="@+id/e_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:padding="16sp"/>
+
+        <EditText
+            android:id="@+id/e_lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:padding="16sp"/>
+
+        <EditText
+            android:id="@+id/e_uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:padding="16sp" />
+
+        <EditText
+            android:id="@+id/e_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16sp" />
+
+        <EditText
+            android:id="@+id/e_branch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Branch"
+            android:inputType="textPersonName"
+            android:padding="16sp" />
+
+        <EditText
+            android:id="@+id/e_sem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Semester"
+            android:inputType="textPersonName"
+            android:padding="16sp" />
+
+
+        <Button
+            android:id="@+id/b_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:onClick="OnReg"
+            android:text="Register" />
+
+
+    </LinearLayout>
+</ScrollView>

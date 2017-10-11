@@ -1,0 +1,21 @@
+<resources>
+<string name="app_name">NFCvent</string>
+<string name="title_activity_welcome">Home Screen</string>
+<string name="next">NEXT</string>
+<string name="skip">SKIP</string>
+<string name="start">GOT IT</string>
+
+<string name="slide_1_title">NFCvent</string>
+<string name="slide_1_desc">The easiest and fastest way to manage an event!</string>
+
+<string name="slide_2_title">NFC and QR support</string>
+<string name="slide_2_desc">Quick confirmations for event check-ins!</string>
+
+<string name="slide_3_title">Your Event Identity</string>
+<string name="slide_3_desc">One app to rule them all!</string>
+
+<string name="slide_4_title">Goodbye queues</string>
+<string name="slide_4_desc">No more waiting for your turn!</string>
+
+</resources>
+
